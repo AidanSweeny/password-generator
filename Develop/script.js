@@ -6,13 +6,13 @@ var numbers = [1,2,3,4,5,6,7,8,9,0]
 var spChars = ["+", "-", "&", "|", "!", "(", ")", "{", "}", "[", "]", "^",
 "~", "*", "?", ":","\"","\\"]
 var upLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-var pswrd = [];
-var finalPswrd = [];
 
 function generatePassword() {
+  var pswrd = [];
+  var finalPswrd = [];
   var letter = confirm("Do you want to use lower case letters?")
   var number = confirm("Do you want to use numbers?")
-  var spChar = confirm("Do you want to use letters?")
+  var spChar = confirm("Do you want to use special characters?")
   var upLetter = confirm("Do you want to use upper case letters?")
   var num = prompt("How long do you want your password. This must be 8 to 128 character.")
   while (num < 8 || num > 128){
