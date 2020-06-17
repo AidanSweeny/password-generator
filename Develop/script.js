@@ -15,6 +15,18 @@ function generatePassword() {
   var spChar = confirm("Do you want to use letters?")
   var upLetter = confirm("Do you want to use upper case letters?")
   var num = prompt("How long do you want your password. This must be inbetween 8 and 128 character.")
+  if(letter){
+    pswrd = pswrd.concat(letters);
+  }
+  if(number){
+    pswrd = pswrd.concat(numbers);
+  }
+  if(spChar){
+    pswrd = pswrd.concat(spChars);
+  }
+  if(upLetter) {
+    pswrd = pswrd.concat(upLetters);
+  }
 }
 
 // Write password to the #password input
