@@ -14,7 +14,10 @@ function generatePassword() {
   var number = confirm("Do you want to use numbers?")
   var spChar = confirm("Do you want to use letters?")
   var upLetter = confirm("Do you want to use upper case letters?")
-  var num = prompt("How long do you want your password. This must be inbetween 8 and 128 character.")
+  var num = prompt("How long do you want your password. This must be 8 to 128 character.")
+  if (num < 8 || num > 128){
+    num = prompt("Please select a number form 8 to 128")
+  }
   if(letter){
     pswrd = pswrd.concat(letters);
   }
@@ -31,7 +34,7 @@ function generatePassword() {
     var idx = Math.floor(Math.random() * pswrd.length);
     finalPswrd.push(pswrd[idx]);
   }
-  alert(finalPswrd.join(""));
+  alert("This is your Password: " +finalPswrd.join(""));
 }
 
 // Write password to the #password input
