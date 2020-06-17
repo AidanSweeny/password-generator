@@ -9,6 +9,13 @@ var upLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var pswrd = [];
 var finalPswrd = [];
 
+function generatePassword() {
+  var letter = confirm("Do you want to use lower case letters?")
+  var number = confirm("Do you want to use numbers?")
+  var spChar = confirm("Do you want to use letters?")
+  var upLetter = confirm("Do you want to use upper case letters?")
+  var num = prompt("How long do you want your password. This must be inbetween 8 and 128 character.")
+}
 
 // Write password to the #password input
 function writePassword() {
