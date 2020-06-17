@@ -27,6 +27,11 @@ function generatePassword() {
   if(upLetter) {
     pswrd = pswrd.concat(upLetters);
   }
+  for (var i=0; i<num; i++){
+    var idx = Math.floor(Math.random() * pswrd.length);
+    finalPswrd.push(pswrd[idx]);
+  }
+  alert(finalPswrd.join(""));
 }
 
 // Write password to the #password input
